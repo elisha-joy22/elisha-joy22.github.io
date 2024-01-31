@@ -81,8 +81,8 @@
         \textbf{Technologies:}
     \end{minipage}
     \hfill
-    \begin{minipage}[t]{0.68\textwidth}
-           PostgresSQL, MongoDB, Git, Docker, Redis, Memcached, Celery, RabbitMQ.
+    \begin{minipage}[t]{0.6\textwidth}
+        Python-Django, PostgresSQL, MongoDB, Git, Docker, Redis, Memcached, Celery, RabbitMQ.
     \end{minipage}
 \vspace{20pt}
 \end{minipage}
@@ -125,7 +125,7 @@
 		{
         \begin {itemize}
         \item App designed in a way that customer can choose a car avalibale,check the rental history and book it. Renter receives details of the customer who booked the car.
-        \item Used Django as backend app,Django templates for UI, postgreSQL for DB management, Celery for sending notifications as emails.
+        \item Used Django as backend app, Django templates for UI, postgreSQL for DB management, Celery for sending notifications as emails.
         \end{itemize}}
     \entry
 		{Express Js}
