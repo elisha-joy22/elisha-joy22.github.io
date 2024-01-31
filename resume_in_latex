@@ -1,0 +1,169 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Class
+% Version 2.0 (12/10/23)
+%
+% This class originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Omar Roldan
+% Based on a template by Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}  
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} 
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	{ \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{ELISHA G JOY}}}} % First name
+	
+	\vspace{6pt}
+	
+	{\Large Backend Developer} % Career or current job title
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text\\ 
+    \icon{Phone}{11}{+91 8301022927}\\
+    \icon{MapMarker}{11}{Kochi, Kerala}\\
+    {\href{http://www.google.com}{}}
+\end{minipage}
+\begin{minipage}[t]{0.27\textwidth} % 27% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\icon{Envelope}{11}{\href{mailto:email@example.com}{elishagjoy@outlook.com}}\\	
+    \icon{Github}{11}{\href{https://github.com/elisha-joy22}{github.com/elisha-joy22}}\\
+    \icon{LinkedinSquare}{11}{\href{https://www.linkedin.com/in/elisha-joy-1757861b7/}{/in/elisha-joy-1757861b7}}\\    
+    
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.465\textwidth}
+    \cvsect{Skills}
+    \vspace{2pt}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Languages:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Python, SQL, FastAPI, JavaScript, HTML  
+    \end{minipage}
+    \vspace{4mm}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Technologies:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.68\textwidth}
+           PostgresSQL, MongoDB, Git, Docker, Redis, Memcached, Celery, RabbitMQ.
+    \end{minipage}
+\vspace{20pt}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-10pt}
+\cvsect{Experience}
+\begin{entrylist}
+	\entry
+        {\textbf{entri.app}}
+		{Backend Developer - Intern (\textit{04/2023 - Present})}
+        {}
+		{
+            \begin{itemize}
+                \item Developed backend for \textbf{Gratitudes-Entri}, a thanksgiving app - aimed to foster a culture of gratitude and appreciation within the company.
+                \item Users used their slack accounts to login to this app which made them to use the app with ease. 
+                \item Used \textit{\textbf{FastAPI}} as backend application, \textit{\textbf{MongoDB}} as the database, \textit{\textbf{Redis}} for caching, \textbf{Slack OAuth} and \textbf{JWT} for authentication and \textit{\textbf{Docker}} for its containerization,
+                \item Developed backend for \textbf{Entri-DeviceTracker}, an app aimed to track devices issued for testing and other purposes within the company, automating the process rather than manually maintaining the records.
+                \item Used \textbf{\textit{Django}} as the backend application, \textit{\textbf{PostgresSQL}} as the database for the app.
+                \item Leveraged exposure to \textbf{Celery} and \textbf{RabbitMQ} in the meantime.
+                \item Was part of an \textbf{ETL} project , using \textbf{Airbyte} for data extraction, \textbf{DBT} for data transformation, and \textbf{Airflow} for data synchronization.
+
+            \end{itemize}
+        }
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+\cvsect{Projects}
+\begin{entrylist}
+    \entry
+		{Python- Django}
+		{Car Rental App : Rentopia}
+		{https://github.com/elisha-joy22/Rentopia}
+		{
+        \begin {itemize}
+        \item App designed in a way that customer can choose a car avalibale,check the rental history and book it. Renter receives details of the customer who booked the car.
+        \item Used Django as backend app,Django templates for UI, postgreSQL for DB management, Celery for sending notifications as emails.
+        \end{itemize}}
+    \entry
+		{Express Js}
+		{Netflix Clone}
+		{https://github.com/elisha-joy22/Netflix-clone-app}
+		{
+        \begin {itemize}
+        \item Developed a Netflix clone app without payment interaction.
+        \item Used\textbf{ Express Js} as backend, \textbf{React Js} as front-end and \textbf{MongoDB} as database .
+        \end{itemize}}
+
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-10pt}
+\cvsect{Education}
+\begin{entrylist}
+    \entry
+		{6/2016 - 5/2020}
+		{BE-Mechanical Engineering (Anna University)}
+		{Mar Ephraem College of Engineering and Technolgy}
+        {CGPA: 7.37}
+
+		
+    \entry
+		{2014 - 2016}
+		{Higher Secondary Education (ISC)}
+		{Seventh Day HSS, Pathanamthitta.}
+		{Percentage: 86.2}
+	\entry
+		{2014}
+		{SSLC (ICSE)}
+		{Shalom Public School, Chennerkkara.}
+		{Percentage: 82.8}
+        
+\end{entrylist}
+
+\end{document}
